@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Actividad Interactiva</h1>
+        
+        <!-- Sección que contiene las imágenes arrastrables -->
+        <div class="row">
+            <!-- Imágenes arrastrables -->
+            <div class="image-container">
+                <img src="imagenes/MOUSE-TRUST-ALAMBRICO-BASIC-2.png" alt="Imagen para la actividad" id="draggable1" draggable="true">
+            </div>
+            
+            <div class="image-container">
+                <img src="imagenes/display.png" alt="Imagen para la actividad" id="draggable2" draggable="true">
+            </div>
+        </div>
+        
+        <!-- Zonas de soltado -->
+        <div class="row2">
+            <div class="drop-zone" id="dropzone1">Arrastra la imagen aquí</div>
+            <div class="drop-zone" id="dropzone2">Arrastra la imagen aquí</div>
+        
+        </div>
+        
+        <!-- Área de respuesta -->
+        <div class="row2">
+            <div class="response-area">
+                <label for="response1">Tu respuesta:</label>
+                <input type="text" id="response1" name="response">
+            </div>
+            <div class="response-area">
+                <label for="response2">Tu respuesta:</label>
+                <input type="text" id="response2" name="response">
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

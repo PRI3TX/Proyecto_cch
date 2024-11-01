@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3f3f3;
+}
+
+.container {
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.row, .row2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 150px;
+    height: auto;
+    cursor: grab;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+.drop-zone {
+    width: 150px;
+    height: 150px;
+    border: 2px dashed #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.drop-zone:hover {
+    border-color: #666;
+}
+
+.response-area {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.response-area label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.response-area input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Clase para mantener el tamaño de las imágenes constante */
+.dropped-image {
+    width: 150px;
+    height: auto;
+}
